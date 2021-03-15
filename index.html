@@ -148,6 +148,171 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zsx">
+      <meta itemprop="description" content="天道酬勤">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="aquamarine的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-03-15 16:41:13 / Modified: 16:40:46" itemprop="dateCreated datePublished" datetime="2021-03-15T16:41:13+08:00">2021-03-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="第一章：数据库发展史"><a href="#第一章：数据库发展史" class="headerlink" title="第一章：数据库发展史"></a>第一章：数据库发展史</h1><h2 id="数据库管理技术的发展"><a href="#数据库管理技术的发展" class="headerlink" title="数据库管理技术的发展"></a>数据库管理技术的发展</h2><p>1.人工管理阶段 2.文件系统阶段 3.倒排文件系统；<br> 文件系统的缺陷（数据冗余性、数据不一致性、数据联系弱）。</p>
+<p>4.数据库阶段</p>
+<h2 id="数据库技术的产生"><a href="#数据库技术的产生" class="headerlink" title="数据库技术的产生"></a>数据库技术的产生</h2><p>进入数据库阶段的标志是20世纪60年代末的三件大事：<br>1968年IBM公司研制的IMS系统—————–典型的层次DBS;<br>1969年美国CODASYL组织 DBTG报告提出———网状DBS的概念;<br>1970年美国IBM公司的E.F.Codd发表的论文提出—关系模型的思想</p>
+<h2 id="数据库阶段的特点"><a href="#数据库阶段的特点" class="headerlink" title="数据库阶段的特点"></a>数据库阶段的特点</h2><ol>
+<li> 采用数据模型表示复杂的数据结构(数据库的三级体系结构)；</li>
+<li> 有较高的数据独立性(逻辑数据独立性、物理数据独立性)；</li>
+<li> 数据库系统为用户提供了方便的用户接口；</li>
+<li> 数据库系统提供四方面的数据控制功能：数据库的并发控制，数据库的恢复，数据的完整性，数据安全性。</li>
+<li> 对数据的操作以数据项为单位，增加了系统的灵活性。</li>
+</ol>
+<h2 id="数据库技术的术语"><a href="#数据库技术的术语" class="headerlink" title="数据库技术的术语"></a>数据库技术的术语</h2><h2 id="数据库技术的发展"><a href="#数据库技术的发展" class="headerlink" title="数据库技术的发展"></a>数据库技术的发展</h2><h1 id="第二章：数据库系统结构"><a href="#第二章：数据库系统结构" class="headerlink" title="第二章：数据库系统结构"></a>第二章：数据库系统结构</h1><h2 id="数据描述"><a href="#数据描述" class="headerlink" title="数据描述"></a>数据描述</h2><p>从事物的特性到计算机中的具体表示，分别经历了三个阶段:<br>概念设计中的数据描述（实体、属性、实体集、实体标识符）<br>逻辑设计中的数据描述（记录、字段、文件、关键码）<br>物理设计中的数据描述（位、字节、字、块、桶、卷）</p>
+<h2 id="数据联系的描述"><a href="#数据联系的描述" class="headerlink" title="数据联系的描述"></a>数据联系的描述</h2><p>联系的元数：与一个联系有关的实体集的个数<br>联系的类型： 一对一（1：1）、 一对多（1：n）、多对多（m：n）</p>
+<h2 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h2><p><strong>现实世界 –&gt; 概念设计 –&gt; (概念数据模型)信息世界 –&gt; 逻辑设计 –&gt; （逻辑数据模型）机器世界</strong></p>
+<h3 id="概念数据模型"><a href="#概念数据模型" class="headerlink" title="概念数据模型"></a>概念数据模型</h3><p>是按用户的观点对数据建模，强调其语义表达能力。</p>
+<h3 id="逻辑数据模型"><a href="#逻辑数据模型" class="headerlink" title="逻辑数据模型"></a><strong>逻辑数据模型</strong></h3><p>面向数据库逻辑结构的模型。包含：数据结构、数据操作和数据完整性约束。<br><strong>数据结构</strong>是指对实体类型和实体间联系的表达和实现；<br><strong>数据操作</strong>是指对数据库的检索和更新（包括插入、删除、修改）两类操作的实现；<br><strong>数据完整性约束</strong>给出数据及其联系应具有的制约和依赖规则。</p>
+<p><strong>逻辑数据模型主要有：</strong><br><strong>层次模型：</strong>用树型结构来表示实体类型及实体之间联系的模型称为层次模型。（数据之间的联系通过指针实现）<br><strong>网状模型：</strong>用有向图结构表示实体类型及实体间联系的模型称为网状模型。（数据之间的联系通过指针实现）<br><strong>关系模型：</strong>用二维表格结构来表示实体集。(数据之间的联系 是通过外键和主键间联系实现的 即：公共属性…）<br><strong>面向对象模型：</strong>数据之间嵌套、递归联系是通过对象标识符实现的</p>
+<h3 id="实体联系模型（ER模型）—一种著名概念数据模型"><a href="#实体联系模型（ER模型）—一种著名概念数据模型" class="headerlink" title="实体联系模型（ER模型）—一种著名概念数据模型"></a>实体联系模型（ER模型）—一种著名概念数据模型</h3><p> <strong>矩形框</strong>：表示实体类型;<br> <strong>菱形框</strong>：表示联系类型（实体间的联系）;<br> <strong>椭圆形框</strong>：表示实体类型和联系类型的属性;<br> <strong>用直线连接</strong>：实体与属性；联系与属性；实体与实体；</p>
+<h2 id="数据库的体系结构"><a href="#数据库的体系结构" class="headerlink" title="数据库的体系结构"></a>数据库的体系结构</h2><p><strong>三级模式结构：</strong>外部级、概念级、内部级</p>
+<p><strong>三级结构和两级映象：</strong>概念模式、外模式、内模式、模式/内模式映像、外模式/模式映像</p>
+<p><strong>两级数据独立性:</strong>  物理数据独立性、逻辑数据独立性</p>
+<p><strong>用户和用户界面</strong></p>
+<h2 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h2><p>**DBMS的主要功能:**定义功能、操纵功能、保护功能、维护功能、数据字典。</p>
+<p><strong>从模块结构来观察，DBMS由两大部分组成：</strong>查询处理器和存储管理器。</p>
+<p>查询处理器有四个主要成分：DDL编译器，DML编译器，嵌入式DML的预编译器及查询运行核心程序。</p>
+<p>存储管理器有四个主要成分：权限和完整性管理器，事务管理器，文件管理器及缓冲区管理器。</p>
+<h2 id="数据库系统"><a href="#数据库系统" class="headerlink" title="数据库系统"></a>数据库系统</h2><p>包括数据库（DB)、硬件、软件、数据库管理员（DBA）</p>
+<h1 id="第三章：关系运算"><a href="#第三章：关系运算" class="headerlink" title="第三章：关系运算"></a>第三章：关系运算</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p><em><strong>关系模型：</strong></em></p>
+<p>用二维表格表示实体集，用关键码表示实体间联系的数据模型；</p>
+<p><strong>关键码： 超键、候选键、主键和外键；</strong>(P.37)</p>
+<p><strong>关系的定义和特点；</strong>（P36~P37,P41）</p>
+<p><strong>三类完整性规则：</strong>(P40~P41)</p>
+<p>实体完整性规则、参照完整性规则、用户定义的完整性规则；</p>
+<p><strong>ER模型到关系模型的转换规则；</strong></p>
+<p><strong>过程性语言与非过程性语言：</strong><br> 过程性语言：编程时必须指出“干什么”及“怎么干”的语言;<br> 非过程性语言：编程时只须指出“干什么”,不必指出“怎么干” 。</p>
+<h2 id="关系代数（P42-P51）"><a href="#关系代数（P42-P51）" class="headerlink" title="关系代数（P42~P51）"></a>关系代数（P42~P51）</h2><p><strong>理论基础：谓词演算</strong> </p>
+<p>五个基本操作（并、差、笛卡儿积、投影、选择）；<br>四个组合操作（交、联接、自然联接、除）；<br>三个扩充的关系代数操作（外联接、外部并、半联接）；</p>
+<h2 id="关系演算-P52-P56"><a href="#关系演算-P52-P56" class="headerlink" title="关系演算 (P52~P56)"></a>关系演算 (P52~P56)</h2><p><strong>理论基础：谓词演算 、元组关系演算和域关系演算的原子公式、公式的定义。</strong><br>无限关系（指元组个数为无穷多个的关系）；<br>无穷验证（验证公式真假时需要进行无限次验证）。<br>关系演算的安全性和等价性。</p>
+<h2 id="查询优化-P57-P64"><a href="#查询优化-P57-P64" class="headerlink" title="查询优化(P57~P64)"></a>查询优化(P57~P64)</h2><ul>
+<li>关系代数表达式的优化问题；</li>
+<li>关系代数表达式的等价变换规则；</li>
+<li>优化的策略；</li>
+<li>优化算法、例 3.24</li>
+</ul>
+<h1 id="第四章：关系数据库语言SQL-P-67-P-97"><a href="#第四章：关系数据库语言SQL-P-67-P-97" class="headerlink" title="第四章：关系数据库语言SQL (P.67-P.97)"></a>第四章：关系数据库语言SQL (P.67-P.97)</h1><ul>
+<li>SQL数据库的体系结构，SQL的组成。</li>
+<li>SQL的数据定义：SQL模式、基本表和索引的创建和撤销，SQL提供的数据类型。</li>
+<li>SQL的数据查询：SELECT语句的格式，单表和多表查询，基本表的联接操作，聚合和分组，集合操作。  </li>
+<li>SQL的数据更新：插入、删除和修改语句。</li>
+<li>视图的创建和撤消，对视图更新操作的限制。</li>
+<li>嵌入式SQL：预处理方式，使用规定，使用技术。   </li>
+</ul>
+<h1 id="第六章：实体联系模型"><a href="#第六章：实体联系模型" class="headerlink" title="第六章：实体联系模型"></a>第六章：实体联系模型</h1><h2 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
+<li><p>实体与属性的基本概念,属性的分类,联系的元数、 连通词、基数。</p>
+</li>
+<li><p>扩展的实体联系模型的表示方法;</p>
+</li>
+<li><p>如何使用实体联系模型进行概念设计的方法。</p>
+</li>
+</ul>
+<h1 id="第七章：数据库设计"><a href="#第七章：数据库设计" class="headerlink" title="第七章：数据库设计"></a>第七章：数据库设计</h1><h2 id="基本概念-2"><a href="#基本概念-2" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
+<li><p>DBS生存期及其7个阶段的任务和工作，DBD过程的输入和输出。</p>
+</li>
+<li><p>需求分析的步骤、数据流图，数据字典的内容和作用。</p>
+</li>
+<li><p>概念设计的重要性、主要步骤。逻辑设计阶段的主要步骤。</p>
+</li>
+<li><p>ER模型的基本元素，属性的分类，联系的元数、连通词、基数。采用ER方法的概念设计步骤。</p>
+</li>
+<li><p>ER模型到关系模型的转换规则。采用ER方法的逻辑设计步骤。</p>
+</li>
+<li><p>ER模型的扩充：弱实体，超类和子类。</p>
+</li>
+<li><p>规范化理论对数据库设计的指导意义。</p>
+</li>
+</ul>
+<h2 id="本章的重点篇幅"><a href="#本章的重点篇幅" class="headerlink" title="本章的重点篇幅"></a>本章的重点篇幅</h2><ol>
+<li>教材中P163-165的转换规则和实例。</li>
+<li>教材中P159-160的ER模型实例。</li>
+</ol>
+<h2 id="要求掌握"><a href="#要求掌握" class="headerlink" title="要求掌握"></a>要求掌握</h2><ol>
+<li>基本概念、定义、方法；</li>
+<li>根据用户的需求，进行ER模型设计；</li>
+<li>根据转换规则，将ER模型转换为关系模型。 </li>
+</ol>
+<h1 id="第八章：数据库管理"><a href="#第八章：数据库管理" class="headerlink" title="第八章：数据库管理"></a>第八章：数据库管理</h1><h2 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h2><ol>
+<li>事务的定义，COMMIT和ROLLBACK的语义，事务的ACID性质，事务的状态变迁图。</li>
+<li>存储器类型，稳定存储器的实现，数据传送过程。</li>
+<li>恢复的定义、基本原则和实现方法，故障的类型，</li>
+<li>检查点机制，REDO和UNDO操作，运行记录优先原则。</li>
+<li>并发操作带来的三个问题，X锁、PX协议、PXC协议，S锁、PS协议、PSC协议，活锁、饿死和死锁，并发调   度，串行调度，并发调度的可串行化，两段封锁法，SQL中事务的存取模式和隔离级别。</li>
+<li>完整性的定义，完整性子系统的功能，完整性规则的组成。SQL中的三大类完整性约束，SQL3中的触发器技术。</li>
+<li>安全性的定义、级别，权限，SQL中的安全性机制（视图、SQL用户权限及操作)</li>
+</ol>
+<h2 id="重点篇幅"><a href="#重点篇幅" class="headerlink" title="重点篇幅"></a>重点篇幅</h2><ol>
+<li>检查点机制的方法和恢复算法。（教材中P.175-176）</li>
+<li>并发操作带来的三个问题，封锁带来的三个问题，并发调度的可串行化。（教材P.177-179）</li>
+<li>SQL中完整性约束的实现，断言、触发器(SQL3)。（教材P.185-191）</li>
+<li>SQL Server 触发器的使用。（教材P.298-300） </li>
+<li>安全性中的授权语句、回收语句。（教材P.193、194）</li>
+</ol>
+<h2 id="要求掌握-1"><a href="#要求掌握-1" class="headerlink" title="要求掌握"></a>要求掌握</h2><ol>
+<li>恢复、并发控制、完整性和安全性的基本概念、定义和方法；</li>
+<li>采用检测点技术进行数据恢复的分析方法；</li>
+<li>并发调度的可串行化（包括事务的调度、串行调度、并发调度）分析方法；</li>
+<li>根据用户的需求，能用多种方法定义完整性约束；</li>
+<li>授权和回收语句的使用。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/13/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -606,7 +771,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
